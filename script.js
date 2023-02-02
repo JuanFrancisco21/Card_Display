@@ -10,7 +10,7 @@ function navigate(elem) {
   switch (elem.id) {
     case 'portfolio':
       window.location.href =
-        'https://juanfrancisco21.github.io/portfolio/';
+        'https://juanfrancisco21.github.io/Portfolio/';
       break;
     case 'kaze':
       window.location.href =
