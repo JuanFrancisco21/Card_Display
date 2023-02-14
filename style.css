@@ -3,11 +3,23 @@
   color: rgb(40, 40, 40);
 }
 
-#bgvideo {
+.bgvideo {
   position: fixed;
   min-height: 100%;
   min-width: 100%;
   z-index: -100;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
 }
 
 body {
@@ -181,6 +193,7 @@ body .options .option .label .info .sub {
   transition-delay: 0.1s;
 }
 
+/*BOTTOM CIRCULAR MENU WITH LINKS*/
 .circular-menu {
   position: fixed;
   bottom: 1em;
@@ -293,11 +306,11 @@ body .options .option .label .info .sub {
 }
 
 .circular-menu.circular-menu-left .floating-btn {
-  background-color: hsl(301deg, 67%, 50%);
+  background-color: hsl(285deg, 67%, 50%);
 }
 
 .circular-menu.circular-menu-left:after {
-  background-color: hsl(301deg, 67%, 50%);
+  background-color: hsl(285deg, 67%, 50%);
 }
 
 .circular-menu.circular-menu-left.active .floating-btn i {

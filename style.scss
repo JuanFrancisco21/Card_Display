@@ -5,11 +5,22 @@ $optionDefaultColours: #ed5565, #ffce54, #ac92ec, #3d3d3d, #5d9cec, #ac92ec;
    color: rgb(40, 40, 40);
 }
 
-#bgvideo {
+.bgvideo {
    position: fixed;
    min-height: 100%;
    min-width: 100%;
    z-index: -100;
+}
+
+.visible {
+   visibility: visible;
+   opacity: 1;
+   transition: opacity 2s linear;
+}
+.hidden {
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0s 1s, opacity 1s linear;
 }
 
 body {
@@ -168,6 +179,8 @@ body {
       }
    }
 }
+
+/*BOTTOM CIRCULAR MENU WITH LINKS*/
 .circular-menu {
    position: fixed;
    bottom: 1em;
@@ -281,11 +294,11 @@ body {
 }
 
 .circular-menu.circular-menu-left .floating-btn {
-   background-color: hsl(301, 67%, 50%);
+   background-color: hsl(285, 67%, 50%);
 }
 
 .circular-menu.circular-menu-left:after {
-   background-color: hsl(301, 67%, 50%);
+   background-color: hsl(285, 67%, 50%);
 }
 
 .circular-menu.circular-menu-left.active .floating-btn i {
