@@ -1,5 +1,5 @@
 /**
- * Remove or add the css class to show the card under the mouse
+ * Activate the card where the cursor is on, from de main page
  */
 $('.option').on('click', function () {
   $('.option').removeClass('active');
@@ -11,6 +11,9 @@ $('.option').on('mouseenter', function () {
   $(this).addClass('active');
 });
 
+/**
+ * Activate the card where the cursor is on or when it is clicked, from de header section page
+ */
 $('.option_header').on('click', function () {
   $('.option_header').removeClass('active');
   $(this).addClass('active');
@@ -23,7 +26,7 @@ $('.option_header').on('mouseenter', function () {
 
 
 /**
- * Funtion to change website theme, used at the same time to change the background video.
+ * Funtion to change website theme, (With the background video, you can't see it).
  */
 function changetheme() {
   var element = document.body;
@@ -75,7 +78,7 @@ async function navigate(elem) {
 
 
 /**
- * Funciont to switch between two background videos
+ * Funciont to switch between two background videos (Not implemented)
  */
 function changevideo() {
   /*var element = document.getElementById('video_2');
@@ -89,6 +92,9 @@ function changevideo() {
   }*/
 }
 
+/**
+ * Function to hide with animations the iframe.
+ */
 function hideiframe() {
   var frame = document.getElementById('iframe');
   var header = document.getElementById('header-floating');
@@ -98,6 +104,9 @@ function hideiframe() {
   header.classList.remove('float_show');
 }
 
+/**
+ * Function to show with animations the iframe.
+ */
 function showiframe() {
   var frame = document.getElementById('iframe');
   var header = document.getElementById('header-floating');
@@ -107,7 +116,11 @@ function showiframe() {
   header.classList.remove('float_hide');
 }
 
-
+/**
+ * Function to use delay in js.
+ * @param {*} x secods of delay to use
+ * @returns a promise to resolve.
+ */
 function resolveAfter2Seconds(x) {
   return new Promise((resolve) => {
     setTimeout(() => {
