@@ -504,7 +504,7 @@ body {
 }
 
 button {
-   position: absolute;
+   position: absolute; 
    top: 0;
    right: 0;
    display: flex;
@@ -519,7 +519,7 @@ button {
    transition: all 0.2s linear;
    cursor: pointer;
    border: none;
-   background: rgb(249, 240, 252);
+   background: rgb(255, 255, 255);
 }
 
 button > svg {
