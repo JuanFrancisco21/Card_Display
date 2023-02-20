@@ -60,12 +60,12 @@ async function navigate(elem) {
       break;
     case 'linkedin':
       document.getElementById('iframe').src =
-        'http://www.linkedin.com/in/juan-fco-aguilar-sanchez/';
+        'https://linkedin.com/in/juan-fco-aguilar-sanchez';
       break;
 
     default:
       document.getElementById('iframe').src =
-        'http://www.linkedin.com/in/juan-fco-aguilar-sanchez/';
+        'https://linkedin.com/in/juan-fco-aguilar-sanchez';
       break;
   }
   async function f1() {
